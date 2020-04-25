@@ -69,8 +69,7 @@ h2 {
 
 .navbar ul {
   list-style: none;
-  display: grid;
-  grid-template-columns: repeat(6,2fr);
+  margin-left: 20px;
   justify-self: end;
   
 }
