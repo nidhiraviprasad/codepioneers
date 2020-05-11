@@ -204,6 +204,18 @@ section {
         font-size: 3vw;
 	}
 
+	.centered h1 {
+		font-size: 4vw;
+	}
+
+	.centered p {
+		font-size: 2.5vw;
+	}
+
+	.centered .last-section {
+		font-size: 2.75vw;
+	}
+
 }
 
 
