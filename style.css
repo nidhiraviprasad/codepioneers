@@ -83,14 +83,18 @@ section {
 
 .centered h1 {
 	color: #96ffb8;
-	font-size: 2vw;
+	font-size: 3vw;
 	padding: 15px;
 }
 
 .centered p {
 	color: #fafaf5;
-	font-size: 1vw;
+	font-size: 1.5vw;
 	padding: 5px;
+}
+
+.centered .last-section p {
+	padding-bottom: 25px;
 }
 
 .centered a {
@@ -98,7 +102,7 @@ section {
 	background: #19914f;
 	padding: 18px;
 	border-radius: 36px;
-	font-size: 1.25vw;
+	font-size: 1.5vw;
 }
 
 .centered a:hover {
