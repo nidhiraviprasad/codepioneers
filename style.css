@@ -25,8 +25,7 @@ nav{
 }
 
 label.logo{
-	/*color: #19914f;*/
-	color: black;
+	color: #19914f;
 	font-size: 38px;
 	line-height: 100px;
 	padding: 0 60px;
@@ -64,13 +63,12 @@ section {
 
 
 
-
-/*image & button*/
+/*image & button, index*/
 
 .centered {
 	width: 100%;
 	height: 90vh;
-	background: url(images/writtencode.png);	
+	background: url(images/writtencode3.png);	
 	background-position: center;	
 	background-size: cover;
 	display: flex;
@@ -92,6 +90,7 @@ section {
 	color: #fafaf5;
 	font-size: 1.5vw;
 	padding: 5px;
+	align-items: left;
 }
 
 .centered .last-section p {
@@ -111,6 +110,162 @@ section {
 	background: #96ffb8;
 }
 
+
+
+/*team content boxes*/
+section h1 {
+	font-weight: bold;
+	font-size: 2em;
+	color: black;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 20px;
+	padding-top: 100px;
+}
+
+section h2 {
+	font-weight: bold;
+	font-size: 1.5em;
+	color: #575757;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 20px;
+	padding-bottom: 0px;
+}
+
+.box {
+	display: flex;
+	width: 100%;
+	padding: 20px;
+	padding-left: 90px;
+	padding-right: 90px;
+}
+
+.struct {
+	padding: 30px;
+	width: 100%
+}
+
+.bio {
+	border: 1px solid #19914f;
+	padding: 10px;
+	width: 100%;
+	box-shadow: 5px 5px #777777;
+}
+
+.bio p {
+	padding: 30px;
+	padding-top: 5px;
+}
+
+.top {
+	display: flex;
+	width: 100%;
+}
+
+.top img {
+	border-radius: 50%;
+	padding: 15px;
+}
+
+.top h2 {
+	padding: 20px;
+	padding-top: 50px;
+	padding-left: 0px;
+	padding-bottom: 10px;
+	color: black;
+	display: flex;
+}
+
+.info {
+	display: block;
+	padding-left: 30px;
+}
+
+.info img {
+	border-radius: 0%;
+	padding: 5px;
+	padding-left: 0px;
+}
+
+.profile {
+	width: 100%;
+	padding-left: 105px;
+	padding-top: 10px;
+}
+
+
+
+
+
+
+/*mission statement*/
+
+section .footer h1 {
+	font-size: 2em;
+	font-weight: bold;
+	color: #fafaf5;
+	padding: 30px;
+	padding-top: 50px;
+}
+
+section .footer p {
+	color: #fafaf5;
+	padding-left: 3vw;
+	padding-right: 3vw;
+	font-size: 1.25em;
+}
+
+
+
+
+
+/*course descriptions*/
+.description {
+	margin-top: 0px;
+	padding: 200px;
+	padding-top: 60px;
+	padding-bottom: 80px;
+	width: 100%;
+	background-color: #fafaf5;
+	color: #575757;
+  	text-align: center;
+  	font-size: 1.2em;
+}
+
+.description h2 {
+	padding: 0px;
+	padding-top: 30px;
+	font-weight: bolder;
+}
+
+.description p {
+	padding: 40px;
+	font-weight: bold;
+}
+
+.list {
+	padding: 0px;
+}
+
+.list p {
+	padding: 3px;
+}
+
+.description a {
+	color: #fafaf5;
+	background: #19914f;
+	padding: 18px;
+	border-radius: 36px;
+	font-size: 18px;
+}
+
+.description a:hover {
+	color: #575757;
+	background: #96ffb8;
+}
 
 
 
@@ -133,6 +288,31 @@ section {
 
 
 
+@media (max-width: 1024px) {
+
+	.profile {
+		padding-left: 40px;
+	}
+
+	.box {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.description {
+		padding: 50px;
+		padding-top: 60px;
+		padding-bottom: 80px;
+	}
+
+}
+
+
+
+
+
+
+
 
 /*smaller size*/
 @media (max-width: 952px) {
@@ -151,6 +331,30 @@ section {
 	.centered {
  		width: 100%;
  		height: 70vh;
+	}
+
+	.box {
+		padding: 10px;
+		align-items: center;
+	}
+
+	.struct {
+		padding: 10px;
+		display: block;
+	}
+
+	.top {
+		display: block;
+	}
+
+	.profile {
+		align-items: center;
+	}
+
+	.description {
+		padding: 20px;
+		padding-top: 60px;
+		padding-bottom: 80px;
 	}
 
 }
@@ -213,8 +417,28 @@ section {
 		font-size: 2.5vw;
 	}
 
+	.centered a {
+		font-size: 2.5vw;
+	}
+
 	.centered .last-section {
-		font-size: 2.75vw;
+		font-size: 2.5vw;
+		padding-bottom: : 13px;
+		border-radius: 26px;
+	}
+
+	.struct {
+		width: 100%;
+	}
+
+	.box {
+		display: block;
+	}
+
+	.description {
+		padding: 10px;
+		padding-top: 60px;
+		padding-bottom: 80px;
 	}
 
 }
