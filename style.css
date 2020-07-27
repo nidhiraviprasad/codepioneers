@@ -22,6 +22,7 @@ nav{
 	height: 100px;
 	width: 100%;
 	position: fixed;
+	z-index: 1;
 }
 
 label.logo {
@@ -147,8 +148,8 @@ section h2 {
 	align-items: center;
 	justify-content: center;
 	padding: 20px;
-	padding-bottom: 0px;
 	padding-top: 60px;
+	padding-bottom: 0px;
 }
 
 .box {
@@ -174,6 +175,15 @@ section h2 {
 .bio p {
 	padding: 30px;
 	padding-top: 5px;
+}
+
+.bio a {
+	color: #19914f;
+}
+
+.bio a:hover {
+	text-decoration: underline;
+	color: #19914f;
 }
 
 .top {
@@ -301,6 +311,11 @@ section .footer p {
 	color: #575757;
   	text-align: center;
   	font-size: 1em;
+}
+
+.alt-description h1 {
+	padding: 0px;
+	padding-top: 30px;
 }
 
 .alt-description a {
@@ -440,6 +455,17 @@ section .footer p {
 		padding-left: 20px;
 	}
 
+
+	.container {
+		width: calc(50% - 6px);
+		
+	}
+
+	.container-all {
+		display: block;
+	}
+
+
 }
 
 
@@ -528,6 +554,85 @@ section .footer p {
 	}
 
 }
+
+@media(max-width: 450px) {
+	.container {
+		width: calc(100%);
+	}
+}
+
+
+
+
+/*image gallery*/
+.container-all {
+  padding-left: 50px;
+  padding-right: 50px;
+  margin: 20px;
+  display:flex;
+  position:relative;
+}
+
+.container {
+  width: calc(33% - 6px);
+  margin:3px;
+  display:block;
+  float:left;
+
+  z-index: 0;
+}
+
+.container img {
+  width: 100%;
+  height: 250px;
+  transition-duration: .3s;
+  max-width: 100%;
+  display:block;
+}
+
+.title {
+  position:absolute;
+  display:block;
+  top: 60%;
+  display: none;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+  font-size: 1.2em;
+  text-shadow: 1px 5px 10px black;
+  transition-duration: .3s;
+}
+
+.text {
+  position:absolute;
+  top: 80%;
+  cursor:pointer;
+  max-width: 80%;
+  text-align:center;
+  left: 50%;
+  text-shadow: 1px 5px 10px black;
+  font-size: 0.9em;
+  display:none;
+  margin-right: -50%;
+  transition-duration: .3s;
+  transform: translate(-50%, -50%);
+}
+
+/*.container:hover  img{
+  transition-duration: .3s;
+  filter: rgba(0,0,0,0.5);
+  opacity: 0.9;
+}
+
+.container:hover span {
+  color:white;
+  display: block;
+  transition-duration: .3s;
+}
+*/
+
+
 
 
 
