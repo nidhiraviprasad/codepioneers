@@ -22,7 +22,7 @@ nav{
 	height: 100px;
 	width: 100%;
 	position: fixed;
-	z-index: 1;
+	z-index: 100000000;
 }
 
 label.logo {
@@ -553,11 +553,26 @@ section .footer p {
 		height: 40px;
 	}
 
+	.container-all {
+		display: block;
+	}
+
 }
 
 @media(max-width: 450px) {
 	.container {
-		width: calc(100%);
+		width: 400px;
+		height: 250px;
+	}
+
+	.container-all {
+
+		display: block;
+	}
+
+	.container img {
+		width: 390px;
+		height: 245px;
 	}
 }
 
@@ -569,60 +584,61 @@ section .footer p {
   padding-left: 50px;
   padding-right: 50px;
   margin: 20px;
-  display:flex;
+  display: block;
   position:relative;
 }
 
 .container {
-  width: calc(33% - 6px);
+  width: 400px;
+  height: 250px;
   margin:3px;
-  display:block;
-  float:left;
+  display: inline-block;
+  position: relative;
 
-  z-index: 0;
 }
 
 .container img {
-  width: 100%;
+  width: 400px;
   height: 250px;
   transition-duration: .3s;
   max-width: 100%;
   display:block;
 }
 
-.title {
+.container .title {
   position:absolute;
-  display:block;
-  top: 60%;
-  display: none;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%);
-  font-weight: bold;
-  font-size: 1.2em;
-  text-shadow: 1px 5px 10px black;
-  transition-duration: .3s;
-}
-
-.text {
-  position:absolute;
-  top: 80%;
+  top: 70%;
   cursor:pointer;
   max-width: 80%;
   text-align:center;
   left: 50%;
   text-shadow: 1px 5px 10px black;
-  font-size: 0.9em;
+  font-size: 1.1em;
+  display:none;
+  margin-right: -50%;
+  transition-duration: .3s;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+}
+
+.container .text {
+  position:absolute;
+  top: 85%;
+  cursor:pointer;
+  max-width: 80%;
+  text-align:center;
+  left: 50%;
+  text-shadow: 1px 5px 10px black;
+  font-size: 0.8em;
   display:none;
   margin-right: -50%;
   transition-duration: .3s;
   transform: translate(-50%, -50%);
 }
 
-/*.container:hover  img{
+.container:hover img{
   transition-duration: .3s;
-  filter: rgba(0,0,0,0.5);
-  opacity: 0.9;
+  filter: brightness(60%);
 }
 
 .container:hover span {
@@ -630,7 +646,7 @@ section .footer p {
   display: block;
   transition-duration: .3s;
 }
-*/
+
 
 
 
