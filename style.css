@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Play:wght@700&display=swap');
 
+
 *{
 	padding: 0;
 	margin: 0;
@@ -16,6 +17,8 @@ body{
 
 
 
+
+
 /*navigation bar*/
 nav{
 	background: #fafaf5;
@@ -23,6 +26,10 @@ nav{
 	width: 100%;
 	position: fixed;
 	z-index: 100000000;
+
+	-webkit-box-shadow: 0 8px 6px -6px #999;
+    -moz-box-shadow: 0 8px 6px -6px #999;
+    box-shadow: 0 8px 6px -6px #999;
 }
 
 label.logo {
@@ -79,6 +86,10 @@ section {
 
 
 
+
+
+
+
 /*image & button, index*/
 
 .centered {
@@ -98,7 +109,7 @@ section {
 
 .centered h1 {
 	color: #96ffb8;
-	font-size: 3vw;
+	font-size: 3.5vw;
 	padding: 15px;
 }
 
@@ -128,6 +139,66 @@ section {
 
 
 
+
+
+
+
+
+
+/*meet the team sections*/
+
+
+.people-top {
+	width: 50%;
+	align-items: center;
+	display: flex;
+	padding: 20px;
+	margin: auto;
+}
+
+.people {
+	display: flex;
+	padding: 20px;
+	margin: auto;
+	padding-bottom: 80px;
+}
+
+
+.person-top {
+	width: 50%;
+	display: block;
+	align-items: center;
+	text-align: center;
+	margin: auto;
+}
+
+.person {
+	width: 25%;
+	display: block;
+	text-align: center;
+}
+
+.person img, .person-top img {
+	height: 200px;
+	width: auto;
+
+	border-radius: 50%;
+	padding: 15px;
+}
+
+.person h3, .person-top h3 {
+	font-size: 1.2em;
+}
+
+.person p, .person-top p {
+	font-size: 1em;
+	color: #575757;
+}
+
+
+
+
+
 /*team content boxes*/
 section h1 {
 	font-weight: bold;
@@ -152,6 +223,15 @@ section h2 {
 	padding-bottom: 0px;
 }
 
+
+
+
+
+
+
+
+/*program descriptions*/
+
 .box {
 	display: flex;
 	width: 100%;
@@ -165,62 +245,57 @@ section h2 {
 	width: 100%
 }
 
-.bio {
+.bio-alt {
+  	text-align: center;
+  	font-size: 1.2em;
+}
+
+.bio-alt h3 {
+	padding-top: 50px;
+	padding-bottom: 20px;
+	color: black;
+}
+
+.bio-alt h2 {
+	padding: 0px;
+	padding-top: 30px;
+	font-weight: bolder;
+}
+
+
+
+.bio-alt {
 	border: 2px solid #96ffb8;
 	padding: 10px;
 	width: 100%;
 	box-shadow: 5px 5px #777777;
 }
 
-.bio p {
-	padding: 30px;
-	padding-top: 5px;
+.bio-alt p {
+	padding: 40px;
 }
 
-.bio a {
-	color: #19914f;
+.bio-alt a {
+	color: #fafaf5;
+	background: #19914f;
+	padding: 18px;
+	border-radius: 36px;
+	font-size: 18px;
+	margin-bottom: 40px;
 }
 
-.bio a:hover {
-	text-decoration: underline;
-	color: #19914f;
+.bio-alt a:hover {
+	color: #575757;
+	background: #96ffb8;
 }
 
-.top {
-	display: flex;
-	width: 100%;
+
+.bio-alt .register-button {
+	padding-bottom: 40px;
+	padding-top: 40px;
 }
 
-.top img {
-	border-radius: 50%;
-	padding: 15px;
-}
 
-.top h2 {
-	padding: 20px;
-	padding-top: 50px;
-	padding-left: 0px;
-	padding-bottom: 10px;
-	color: black;
-	display: flex;
-}
-
-.info {
-	display: block;
-	padding-left: 30px;
-}
-
-.info img {
-	border-radius: 0%;
-	padding: 5px;
-	padding-left: 0px;
-}
-
-.profile {
-	width: 100%;
-	padding-left: 105px;
-	padding-top: 10px;
-}
 
 
 
@@ -248,7 +323,9 @@ section .footer p {
 
 
 
-/*course descriptions*/
+/*descriptions*/
+
+
 .description {
 	margin-top: 0px;
 	padding: 200px;
@@ -286,18 +363,12 @@ section .footer p {
 	padding: 3px;
 }
 
-.description a {
-	color: #fafaf5;
-	background: #19914f;
-	padding: 18px;
-	border-radius: 36px;
-	font-size: 18px;
-}
 
-.description a:hover {
-	color: #575757;
-	background: #96ffb8;
-}
+
+
+
+
+
 
 
 /*for a variation in background color to differentiate sections*/
@@ -557,6 +628,35 @@ section .footer p {
 		display: block;
 	}
 
+	.people, .people-top {
+		display: block;
+		margin: auto;
+	}
+
+	.person, .person-top {
+		margin: auto;
+		padding: 10px;
+	}
+
+	.footer-real {
+		display: block;
+		margin: auto;
+		width: 100%;
+	}
+
+
+	.footer-real p {
+		margin: auto;
+		width: 100%;
+	}
+
+	.social-links {
+		margin: auto;
+		display: flex;
+		width: 100%;
+	}
+
+
 }
 
 @media(max-width: 450px) {
@@ -653,7 +753,8 @@ section .footer p {
 
 
 
-/*footer*/
+
+/*banners*/
 .footer {
 	margin-top: 0px;
 	padding-top: 60px;
@@ -681,4 +782,95 @@ section .footer p {
 .footer a:hover {
 	color: #fafaf5;
 	text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+/*real footer*/
+.footer-real {
+	margin-top: 0px;
+	padding-top: 20px;
+	padding-bottom: 10px;
+	width: 100%;
+	background-color: #19914f;
+	color: white;
+	display: flex;
+}
+
+.footer-real p {
+	color: #96ffb8;
+	padding: 5px;
+	font-size: 18px;
+	padding-left: 100px;
+	padding-top: 10px;
+	float: left;
+	width: 100%;
+}
+
+.social-links {
+	padding-right: 0px;
+	height: 53px;
+	width: 20%;
+	float: right;
+	margin: 0 0;
+	color: #96ffb8;
+}
+
+.social-links i {
+	padding: 12px;
+	color: #96ffb8;
+}
+
+.social-links i:hover {
+  	transition-duration: .3s;
+	color: white;
+}
+
+
+
+
+
+.carousel {
+	margin: auto;
+	height: 500px;
+	width: 800px;
+	margin-top: 30px;
+	margin-bottom: 70px;
+}
+
+.carousel img {
+	height: 500px;
+	width: auto;
+	margin-left: 60px;
+	margin-right: 60px;
+}
+
+
+.flickity-prev-next-button {
+  width: 100px;
+  height: 100px;
+  background: transparent;
+}
+
+.flickity-prev-next-button .arrow {
+  fill: #575757;
+}
+
+.flickity-page-dots {
+  bottom: -300px;
+}
+
+/* white circles */
+.flickity-page-dots .dot {
+  
+}
+/* fill-in selected dot */
+.flickity-page-dots .dot.is-selected {
+  background: #575757;
 }
