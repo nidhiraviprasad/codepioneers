@@ -16,25 +16,30 @@
 		<title>Codepioneers | Home</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="flickity.css" media="screen">
 		<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 		<link href="images/v3.png" rel="shortcut icon" sizes="16x16">
 	</head>
 
 	<body>
 
+		<!--nav bar-->
 		<nav class="navbar navbar-default navbar-static-top">
 			<input type="checkbox" id="check">
 			<label for="check" class="checkbtn">
-				<i class="fas fa-bars"></i>
+				<i class="fa fa-bars" aria-hidden="true"></i>
 			</label>
 			<label class="logo">
-				<img src="images/v3.png"/>
-				<img src="images/logo-text.PNG"/>
+				<a href="index.html"><img src="images/v3.png"/></a>
+				<a href="index.html"><img src="images/logo-text.PNG"/></a>
 			</label>
 			<ul>
-				<li><a href="#">Home</a></li>
 				<li><a href="team.html">Who We Are</a></li>
 				<li><a href="register.html">Register</a></li>
+				<li> <a href="events.html">Events</a></li>
 				<li><a href="volunteer.html">Volunteer</a></li>
 				<li><a href="gallery.html">Gallery</a></li>
 				<!--<li><a href="lessons.html">Lessons</a></li>-->
@@ -47,9 +52,9 @@
 		<!--body-->
 		<section>
 			<div class="centered">
-				<h1>REGISTRATION FOR LATE WINTER SESSION IS OPEN!</h1>
+				<h1>SIGN UP FOR OUR SPRING CLASSES</h1>
 				<div class="last-section">
-					<p>Python and iOS App Development!</p>
+					<p>We teach Python and iOS App Development!</p>
 				</div>
 
 				<a href="register.html">Register Today</a>
@@ -59,14 +64,28 @@
 
 			<div class="alt-description">
 				<h1> What people are saying about us </h1>
-				<h2> ❝ [The classes are] very well put together and enjoyable, perfect for beginners. ❞ </h2>
+
+
+				<script src="flickity.pkgd.min.js"></script>
+
+  				<div class="carousel"
+  					data-flickity='{ "imagesLoaded": true, "wrapAround": true, "autoPlay": true }'>
+  					<img src="images/quotes/quote1.png"/>
+  					<img src="images/quotes/quote2.png"/>
+  					<img src="images/quotes/quote3.png"/>
+  					<img src="images/quotes/quote4.png"/>
+				</div>
+
+
+
+				<!--<h2> ❝ [The classes were] very well put together and enjoyable, perfect for beginners. ❞ </h2>
 				<h3> <i>- Python Student, California, US </i> </h3>
 				<h2> ❝ Program is awesome. I learned a lot from these amazing teachers. ❞ </h2>
 				<h3> <i>- Python Student, Washington, US </i> </h3>
 				<h2> ❝ After the first day, [my child] was brimming with excitement and eagerness to learn, all because of the way the class went. The atmosphere you helped create in the workshop is inclusive and that is absolutely amazing. ❞ </h2>
 				<h3> <i>- Parent, California, US </i> </h3>
 				<h2> ❝ The instructors are great at explaining and helping us students understand the concepts. It is well explained and anyone who is interested in learning Python should attend. This is a great way to be introduced to a complex programming language! ❞ </h2>
-				<h3> <i>- Python Student, California, US </i> </h3>
+				<h3> <i>- Python Student, California, US </i> </h3>-->
 			</div>
 
 
@@ -76,13 +95,19 @@
 
 
 		<!--footer-->
-		<div class="footer">
-			<a href = "https://www.instagram.com/codepioneers/" target = "_blank">Follow us on Instagram!</a>
-			<p> </p>
-			<a href = "#" target = "_blank">Like us on Facebook!</a>
-			<p> </p>
-			<h1> ### </h1>
-			<p>© 2020 Codepioneers.</p>
+		<div class="footer-real">
+
+
+			<p>© 2021 Codepioneers | All rights reserved. </p>
+
+			<div class="social-links">
+
+				<a href="mailto:codepioneers2020@gmail.com" target="_blank"><i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i></a>
+				<a href="#" target="_blank"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>
+				<a href="https://instagram.com/codepioneers" target="_blank"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+				<!--<a href="#" target="_blank"><i class="fab fa-linkedin-in fa-2x"></i></a>-->
+			</div>
+
 		</div>
 
 	</body>
