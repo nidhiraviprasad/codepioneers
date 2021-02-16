@@ -1,0 +1,101 @@
+html {
+	scroll-behavior: smooth;
+}
+
+table {
+	display: inline-block;
+}
+
+.accordion {
+	width: 50%;
+	margin: 0px auto;
+}
+
+
+.accordion-item {
+	margin: 15px;
+}
+
+.accordion a {
+	display: block;
+	width: 100%;
+	padding: 20px;
+	font-size: 24px;
+	text-decoration: none;
+ 	background-color: #96ffb8;
+ 	border: 2px solid black;
+ 	border-radius: 15px;
+ 	color: black;
+}
+
+.accordion a.active {
+	text-decoration: underline;
+}
+
+.accordion a:hover {
+	transition-duration: 0.5s;
+	text-decoration: underline;
+	color: black;
+}
+
+.accordion .content {
+	padding-top: 10px;
+	font-size: 16px;
+	color: white;
+	opacity: 0;
+	overflow: hidden;
+	max-height: 0px;
+}
+
+.accordion .content.active {
+	transition-duration: 0.5s;
+	opacity: 1;
+	max-height: 100%;
+	-webkit-transition: all 0.2s ease 0.15s;
+  	-o-transition: all 0.2s ease 0.15s;
+  	transition: all 0.2s ease 0.15s;
+}
+
+.accordion .content a {
+	font-size: 20px;
+	color: #96ffb8;
+	background-color: #19914f;
+	padding: 0px;
+	border-color: #19914f;
+	display: inline;
+}
+
+.accordion .content a:hover {
+	text-decoration: underline;
+	color: white;
+	transition-duration: 0.3s;
+}
+
+@media (max-width: 1000px) {
+	.accordion {
+		width: 90%;
+	}
+}
+
+.description .box h2 {
+	font-size: 26px;
+	padding-top: 20px;
+}
+
+.description .box .struct {
+	margin: 0px;
+}
+
+section h1 {
+	font-size: 32px;
+}
+
+
+.hack-team {
+	width: 90%;
+	margin: auto;
+}
+
+.footer h2 {
+	color: #fafaf5;
+}
